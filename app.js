@@ -35,3 +35,5 @@ app.get('/', function(req, res) {
         plates: plates.all
     }});
 });
+
+app.listen(4000);

@@ -1,0 +1,7 @@
+{
+    "name"  : "GlucoList"
+    ,"description"  :   "Let's begin with a list of plates with their carbohydrate rates."
+    ,"version"  : "0.1.0"
+    ,"author"   : "François Parmentier"
+    ,"scripts"  : { "run" : "node app.js" }
+}
