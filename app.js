@@ -36,4 +36,4 @@ app.get('/', function(req, res) {
     }});
 });
 
-app.listen(4000);
+app.listen(process.env.C9_PORT||4000);
