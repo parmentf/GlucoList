@@ -2,8 +2,4 @@ h1 GlucoList
 form(method='GET')
   p
     label List
-    select
-      option Frites
-      option Galette des rois
-      option Riz
-      option Pâtes
+    select!= partial('plate',{collection: plates})
