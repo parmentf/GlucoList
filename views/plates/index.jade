@@ -1,5 +1,7 @@
 h1 GlucoList
-form(method='GET')
+form(method='GET',action='/plate')
   p
     label List
     select!= partial('plate',{collection: plates})
+  p
+    button(type='submit') See
