@@ -1,7 +1,7 @@
 h1 GlucoList
-form(method='GET',action='/plate')
+form#f(method='GET',action='/plates/')
   p
-    label List
-    select!= partial('plate',{collection: plates})
+    label List: 
+    select(id='id')!= partial('plate',{collection: plates})
   p
-    button(type='submit') See
+    button(type='submit',onclick="var f = document.getElementById('f'); f.action = f.action + f.id.value;") See

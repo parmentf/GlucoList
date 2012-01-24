@@ -58,3 +58,16 @@ var plates = [
 ];
 
 module.exports.all = plates;
+
+module.exports.find = function(id) {
+    id = parseInt(id, 10);
+    var found = null;
+    plateloop: for(plate_index in plates) {
+        var plate = plates [plate_index];
+        if(plate.id == id) {
+            found = plate;
+            break plateloop;
+        }
+    }
+    return found;
+}

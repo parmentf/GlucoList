@@ -36,4 +36,11 @@ app.get('/', function(req, res) {
     }});
 });
 
+app.get('/plates/:id', function(req, res) {
+  var plate = plates.find(req.params.id);
+  res.render('plates/display_one', {locals: {
+    plate: plate
+  }});
+});
+
 app.listen(process.env.C9_PORT||4000);
